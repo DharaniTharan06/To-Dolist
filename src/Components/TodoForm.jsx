@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { UseTodo } from "../Contexts";
 
 function TodoForm() {
@@ -20,7 +20,7 @@ function TodoForm() {
         placeholder="Write Todo..."
         className="w-full border border-black/10 rounded-l-lg px-3 outline-none duration-150 bg-white/20 py-1.5"
         value={todo}
-        onchange={(e)=>setTodo(e.target.value)}
+        onChange={(e)=>setTodo(e.target.value)}
       />
       <button
         type="submit"
